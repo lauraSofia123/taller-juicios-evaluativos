@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Juicios Evaluativos - Laura Sofia Agredo</title>
+    <link rel="stylesheet" href="./css/app.css">
+<body>
+    <header>
+        <div class="header-info">
+            <div class="user-info">
+                <span>Usuario: <span id="userName">Laura Sofia Agredo</span></span>
+                <button id="logoutBtn">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <div class="form-group">
+                <label for="fichaSelect">Seleccione Ficha:</label>
+                <select id="fichaSelect">
+                    <option value="">SELECCIONE FICHA</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="programaInput">Programa:</label>
+                <input type="text" id="programaInput" readonly value="ANÁLISIS Y DESARROLLO DE SOFTWARE">
+            </div>
+            
+            <div class="form-group">
+                <label for="documentoInput">No. Documento Aprendiz:</label>
+                <div class="input-with-button">
+                    <input type="text" id="documentoInput" placeholder="Ej: 1061716290">
+                    <button type="button" id="buscarBtn">Buscar Aprendiz</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="aprendiz-info">
+            <div class="info-row">
+                <div class="form-group">
+                    <label for="nombresInput">Nombres:</label>
+                    <input type="text" id="nombresInput" readonly value="Laura Sofia">
+                </div>
+                <div class="form-group">
+                    <label for="apellidosInput">Apellidos:</label>
+                    <input type="text" id="apellidosInput" readonly value="Agredo">
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="form-group">
+                    <label for="estadoInput">Estado Aprendiz:</label>
+                    <input type="text" id="estadoInput" readonly value="ACTIVO">
+                </div>
+            </div>
+        </div>
+
+        <div class="juicios-resumen">
+            <div class="resumen-item">
+                <h3>✅ Total Juicios Evaluados</h3>
+                <span id="totalEvaluados">8</span>
+            </div>
+            <div class="resumen-item">
+                <h3>⏳ Total Juicios por Evaluar</h3>
+                <span id="totalPorEvaluar">2</span>
+            </div>
+        </div>
+
+        <div class="juicios-table">
+            <h3>📊 Detalle de Juicios Evaluativos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competencia</th>
+                        <th>Resultado de Aprendizaje</th>
+                        <th>Juicio Evaluación</th>
+                        <th>Fecha y Hora</th>
+                        <th>Instructor que Evaluó</th>
+                    </tr>
+                </thead>
+                <tbody id="juiciosTableBody">
+                    <tr>
+                        <td>Desarrollo de Software</td>
+                        <td>Implementar componentes de software según especificaciones</td>
+                        <td class="juicio-aprobado">APROBADO</td>
+                        <td>2024-10-15 10:30:00</td>
+                        <td>Carlos Martínez</td>
+                    </tr>
+                    <tr>
+                        <td>Bases de Datos</td>
+                        <td>Diseñar modelos de datos relacionales</td>
+                        <td class="juicio-aprobado">APROBADO</td>
+                        <td>2024-10-20 14:15:00</td>
+                        <td>Ana Rodríguez</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend Development</td>
+                        <td>Crear interfaces de usuario responsivas</td>
+                        <td class="juicio-por-evaluar">POR EVALUAR</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p><strong>Elaborado por: Laura Sofia Agredo</strong></p>
+            <p><strong>Tecnólogo en Análisis y Desarrollo de Software</strong></p>
+            <p><strong>Ficha 3064975</strong></p>
+            <p>GFPI-F-135 V04</p>
+        </footer>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
