@@ -1,6 +1,6 @@
 // validarIngreso.js
 export function validarIngreso(username, password) {
-    const PASSWORD_VALIDA = "3064975";
+    const PASSWORD_VALIDA = "06102025";
     
     if (password === PASSWORD_VALIDA && username.trim() !== "") {
         localStorage.setItem('usuario', username);
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (validarIngreso(username, password)) {
                 window.location.href = 'juiciosAprendicesFicha.html';
             } else {
-                alert('❌ Contraseña incorrecta. Use: 3064975');
+                alert('❌ Contraseña incorrecta. Use: 06102025');
             }
         });
     }

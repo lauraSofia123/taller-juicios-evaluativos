@@ -4,7 +4,7 @@ nces v<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sistema de Juicios Evaluativos</title>
-    <link rel="stylesheet" href="./css/app.css">
+   <link rel="stylesheet" href="./css/app.css">
     <style>
         .login-container {
             display: flex;
@@ -124,25 +124,11 @@ nces v<!DOCTYPE html>
             <div class="credential-hint">
                 <strong>Credenciales de prueba:</strong><br>
                 Usuario:laura sofia agredo< <br>
-                Contraseña: 3064975
+                Contraseña: 06102025
             </div>
         </div>
     </div>
 
-   <script>
-    // Login simple temporal
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-        
-        if (username.toLowerCase() === 'laura sofia agredo' && password === '3064975') {
-            alert('Login exitoso! Redirigiendo...');
-            window.location.href = 'juiciosAprendicesFicha.html';
-        } else {
-            alert('Credenciales incorrectas');
-        }
-    });
-</script>
+    <script type="module" src="js/validarIngreso.js"></script>
 </body>
 </html>
